@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula JS 1</title>
+    <meta charset="UTF-8">
+    <script>
+       function somar(val1, val2){
+           let soma = val1 + val2;
+           return soma;
+       }
+
+       // função contador
+       function contador(cont){
+           for(let i=0; i<=cont; i++){
+               console.log(i);
+           }
+       }
+
+       // array vazio
+       var arrEstudante = new Array();
+
+       // array com valores
+       var arrProfessores = ["Juliana", " Jackson", "Marcio", 6, 90];
+       arrProfessores.push("novo valor");
+       arrProfessores[6] = "Oláa";
+
+       // percorre array
+       for(let i =0; i < arrProfessores.length; i++){
+           alert(arrProfessores[i]);
+       }
+
+
+       contador(10)
+
+        /*var numero1 = parseInt(prompt("Digite o primeiro número"));
+       var numero2 = parseInt(prompt("Digite o segundo número"));
+
+       // mensagem retorna no navegador
+       document.write(somar(numero1,numero2));
+       
+       */
+
+    </script>
+
+</head>
+<body>
+
+
+</body>
+</html>

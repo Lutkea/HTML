@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Página de Cadastro">
+        <meta name="author" content="Amanda Lutke">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <style class="image">
+            .img-mario{
+                width: 200px;
+                float: auto;
+            }
+            .about{
+                color:seashell;
+                margin-left: 100px;
+            }
+            .main  {
+                min-height: 200px;
+            }
+        </style>
+               
+    </head>
+    <body>
+        <div class="content">   
+            <div class="main">
+                <img class="img-mario" src="img/mario.png" alt="Imagem do personagem Mario">
+            </div>        
+        </div>
+
+        <div class="form">
+            <form>
+                <input type="text" required id="nome" value="Nome Completo"><br>
+
+                <input type="text" value="E-mail"><br>
+            
+                    <select id="pais" name="pais">
+                        <option value="1pais">Brasil</option>
+                        <option value="2pais">Colombia</option>
+                        <option value="3pais">EUA</option>
+                    </select><br>
+
+                <input type="text" required id="login" value="Login"><br>
+
+                <input type="text" required id="senha" value="Senha"><br>
+
+                <input type="text" required id="senha2" value="Confirmar Senha"><br>
+                <button class="cadastrar" type="submit">Cadastrar</button>
+                <a href="login.html"><button class="cancelar" type="button">Cancelar</button></a>
+            </div>
+    </body>
+</html>
