@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 5</title>
+        <meta charset="UTF-8">
+        <script>
+        var pesos = [45, 66, 76, 80, 56, 62, 88, 90, 76, 45];
+        var idade = [19, 23, 27, 33, 37, 42, 45, 52, 55, 80];
+        var sexo = ["M", "M", "F", "F", "M", "F", "F", "M", "F", "M"];
+
+        function mediaTotal(sexo, idade, pesos, select) {
+            var pesoSoma = 0;
+            var idadeSoma = 0;
+            var idadeMedia = 0;
+            var qtde = 0;
+
+            for (let i = 0; i < sexo.length; i++) {
+                if (sexo[i] === select) {
+                    qtde++;
+                    pesoSoma += pesos[i];
+                    idadeSoma += idade[i];
+                }
+            }
+            idadeMedia = idadeSoma / qtde;
+
+            return [pesoSoma, idadeSoma, idadeMedia, qtde]
+        }
+        var homens = mediaTotal(sexo, idade, pesos, "M")
+        var mulheres = mediaTotal(sexo, idade, pesos, "F")
+
+
+        alert("Homens: \n Existem " + homens[3] + "Homens. \nMédia de Pesos: " + homens[0] + " kgs.\nSoma das Idades: " + homens[1] + " anos.\nMedia das Idades: " + homens[2] + " anos.");
+        alert("Mulheres:\n Existem " + mulheres[3] + "Mulheres. \n Média de Peso: " + mulheres[0] + " kgs.\nSoma das Idades: " + mulheres[1] + " anos.\nMedia das Idades: " + mulheres[2] + " anos.");
+        </script>
+    </head>
+</html>

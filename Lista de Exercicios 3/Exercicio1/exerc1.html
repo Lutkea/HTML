@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 1</title>
+        <meta charset="UTF-8">
+        <script>
+        
+        var totalPessoas = 0;
+        var alturaF = 0;
+        var alturaM = 0;
+        var pessoasF = 0;
+        var pessoasM = 0;
+        var qtdAlturas = [];
+
+    while(totalPessoas < 15) {
+
+	var sexo = prompt("Digite o sexo da pessoa " + (totalPessoas + 1));
+	var altura = parseFloat(prompt("Digite a altura da Pessoa " + (totalPessoas + 1)));
+
+
+        if(sexo == "F" || sexo == "f") {
+
+            qtdAlturas.push(altura);
+            alturaF = alturaF + altura;
+            console.log(alturaF);
+            pessoasF++;
+            console.log(pessoasF);
+            
+        } else {
+
+            if(sexo == "M" || sexo == "m") {
+
+                qtdAlturas.push(altura);
+                alturaM = alturaM + altura;
+                console.log(alturaM);
+                pessoasM++;
+                console.log(pessoasM);
+                
+            }
+        }
+
+	totalPessoas++;
+    }
+
+        var mediaAlturaF = parseFloat((alturaF / pessoasF).toFixed(3));
+
+        document.write("Altura MÉDIA das MULHERES: " + mediaAlturaF + "<br><br>");
+
+        document.write("Quantidade de HOMENS: " + pessoasM + "<br><br>");
+
+        var maiorAltura = Math.max.apply(null, qtdAlturas);
+
+        document.write("A MAIOR altura é: " + maiorAltura + "<br><br>");
+
+        var menorAltura = Math.min.apply(null, qtdAlturas);
+
+        document.write("A MENOR altura é: " + menorAltura + "<br><br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

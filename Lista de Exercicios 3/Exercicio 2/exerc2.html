@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercicio 2</title>
+        <meta charset="UTF-8">
+        <script>
+            var i, idade, opiniao, idadeOtimo = 0, contIdadeOtimo = 0, mediaIdadeOt, quantRegular = 0, contQuantRegular = 0, quantBom = 0, contQuantBom = 0, porcBom;
+
+            for(i = 1; i <= 15; i++) {
+                idade = parseInt(prompt("Sua idade["+i+"]:"));
+                opiniao = prompt("Sua opnião em relação ao filme: ótimo - 3, bom - 2, regular - 1:");
+                
+                if(opiniao == 3) {
+                    idadeOtimo += idade;
+                    contIdadeOtimo++;
+                } if(opiniao == 1) {
+                    quantRegular += opiniao;
+                    contQuantRegular++;
+                } if(opiniao == 2) {
+                    quantBom += opiniao;
+                    contQuantBom++;
+                }
+            } mediaIdadeOt = idadeOtimo / contIdadeOtimo;
+            porcBom = (contQuantBom*100)/15;
+            alert("Média das idades das pessoas que responderam ótimo: "+mediaIdadeOt);
+            alert("Quantidade de pessoas que responderam regular é: "+contQuantRegular);
+            alert("Porcentagem de pessoas que responderam bom: "+porcBom);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
