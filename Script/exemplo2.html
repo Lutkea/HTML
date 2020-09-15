@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/exemplo2.js"></script>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body onload="carregou()">
+    <div>
+        <input type="text" placeholder="Nome" id="nome" onchange="alterou()">
+        <input type="button" value="Clique" onclick="salvarNome()">
+    </div>
+    <div id="box" onmouseover="limparConteudo()">
+        Leonardo
+    </div>
+</body>
+</html>
