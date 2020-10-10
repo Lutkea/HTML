@@ -1,0 +1,22 @@
+{
+  "name": "olamundo",
+  "version": "1.0.0",
+  "description": "este é um projeto de inicio a desenvolvimento com node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lutkea/HTML.git"
+  },
+  "keywords": [
+    "gitHub"
+  ],
+  "author": "Amanda Lutke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lutkea/HTML/issues"
+  },
+  "homepage": "https://github.com/Lutkea/HTML#readme"
+}
